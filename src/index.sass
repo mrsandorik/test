@@ -1,0 +1,31 @@
+a
+  cursor: pointer
+body
+  background: #fff
+.list
+  padding-left: 0
+  width: 400px
+  background: #fff
+  border: 1px solid #d6d6d6
+  box-shadow: 0 0 10px rgba(0,0,0,.2)
+  &__li
+    padding: 5px
+    border-bottom: 1px solid #bbb
+    display: flex
+    justify-content: space-between
+    &--complete
+      text-decoration: line-through
+    &:last-child
+      border-bottom: none
+    &:nth-child(2n+1)
+      background: #f7f7f7
+  &__li em
+    font-size: 16px
+    font-style: normal
+    cursor: pointer
+    font-family: monospace
+  &__del
+    color: red
+    font-family: monospace
+    font-size: 18px
+    text-align: right
